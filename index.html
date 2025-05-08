@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<div class="flex justify-end gap-4"></div>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -18,37 +18,15 @@
 
   <!-- Donation Modal -->
   <div id="donationModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
-    <div class="bg-white rounded-lg p-6 w-11/12 max-w-md shadow-xl">
+    <div class="bg-white rounded-lg p-6 w-11/12 max-w-md shadow-xl text-center">
       <h2 class="text-xl font-semibold mb-4 text-pink-600">Support Tausi Initiative</h2>
-      <label for="phone" class="block mb-2">Enter your M-Pesa number:</label>
-      <input type="text" id="phone" placeholder="07XXXXXXXX" class="w-full p-2 border border-gray-300 rounded mb-4" />
-      
-      <label for="amount" class="block mb-2">Enter the amount to donate:</label>
-      <input type="number" id="amount" placeholder="Enter amount in KES" class="w-full p-2 border border-gray-300 rounded mb-4" />
-      
-      <div class="flex justify-end gap-4"></div>
-        <button id="cancelBtn" class="text-gray-500 hover:underline">Cancel</button>
-        <button class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">Donate</button>
-      </div>
+      <p class="mb-4">Every shilling you donate helps Tausi give a sanitary towel to one girl in Kenya.</p>
+      <p class="mb-2"><strong>Paybill:</strong> 522533</p>
+      <p class="mb-4"><strong>Account Number:</strong> 7942309</p>
+      <p class="text-gray-500">Thank you for your donations.</p>
+      <button id="cancelBtn" class="mt-4 bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">Close</button>
     </div>
   </div>
-  
-  <script>
-    // JavaScript to handle modal open/close
-    const donateBtn = document.getElementById('donateBtn');
-    const donationModal = document.getElementById('donationModal');
-    const cancelBtn = document.getElementById('cancelBtn');
-  
-    donateBtn.addEventListener('click', () => {
-      donationModal.classList.remove('hidden');
-    });
-  
-    cancelBtn.addEventListener('click', () => {
-      donationModal.classList.add('hidden');
-    });
-  </script>
-  </body>
-  </html>
   
 <!-- i should work on the donate button and have a way to connect to stk
   <!-- Main Section -->
