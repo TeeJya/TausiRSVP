@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tausi National Menstrual Health Event</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md">
+    <a href="index.html">
+      <img src="logo.png" alt="Tausi Initiative Logo" class="h-10"/>
+    </a>
+    <button id="donateBtn" class="bg-pink-500 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-600">Donate</button>
+  </header>
+
+  <!-- Donation Modal -->
+  <div id="donationModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg p-6 w-11/12 max-w-md shadow-xl">
+      <h2 class="text-xl font-semibold mb-4 text-pink-600">Support Tausi Initiative</h2>
+      <label for="phone" class="block mb-2">Enter your M-Pesa number:</label>
+      <input type="text" id="phone" placeholder="07XXXXXXXX" class="w-full p-2 border border-gray-300 rounded mb-4" />
+      
+      <label for="amount" class="block mb-2">Enter the amount to donate:</label>
+      <input type="number" id="amount" placeholder="Enter amount in KES" class="w-full p-2 border border-gray-300 rounded mb-4" />
+      
+      <div class="flex justify-end gap-4"></div>
+        <button id="cancelBtn" class="text-gray-500 hover:underline">Cancel</button>
+        <button class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">Donate</button>
+      </div>
+    </div>
+  </div>
+<!-- i should work on the donate button and have a way to connect to stk
+  <!-- Main Section -->
+  <main class="px-6 py-10">
+    <section class="text-center mb-10">
+      <h1 class="text-3xl font-bold text-pink-600 mb-4">National Menstrual Health Event</h1>
+      <p class="text-lg max-w-xl mx-auto">Join Tausi Initiative in empowering young girls through menstrual health education and sanitary towels access. Your participation and support matters.</p><br>
+      <p class="text-lg max-w-xl mx-auto">Date: <strong>28th March 2025</strong> <br>Venue: <a href="https://maps.app.goo.gl/Sw9Jhfndrz9PXNrK8" alt="Tender Heart school Google maps link"><strong>Tender Heart Educational Centre, Dandora, Nairobi</strong>
+        <em class="italic">(this is a google map link)
+          <style>
+            em {
+              font-size: 90%;
+            }
+          </style>
+        </em>
+      </a></p>
+    </section>
+
+    <!-- Event Registration Form -->
+<section class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg">
+  <h2 class="text-2xl font-bold text-pink-600 mb-6 text-center">Event Registration Form</h2>
+
+  <form action="#" method="POST" class="space-y-6">
+
+    <!-- Name -->
+    <div>
+      <label for="name" class="block text-sm font-medium mb-2">Full Name</label>
+      <input type="text" id="name" name="name" required
+        class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+    </div>
+
+    <!-- Email Address -->
+    <div>
+      <label for="email" class="block text-sm font-medium mb-2">Email Address</label>
+      <input type="email" id="email" name="email" required
+        class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+    </div>
+
+    <!-- WhatsApp Number -->
+    <div>
+      <label for="whatsapp" class="block text-sm font-medium mb-2">WhatsApp Number</label>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="07XXXXXXXX" required
+        class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+    </div>
+
+    <!-- Attendance Preference -->
+    <div>
+      <label class="block text-sm font-medium mb-2">How would you prefer to attend the event?</label>
+      <div class="space-y-2">
+        <label class="flex items-center space-x-3">
+          <input type="radio" name="attendance" value="physical" required
+            class="text-pink-500 focus:ring-pink-500" />
+          <span>Physically (In-Person)</span>
+        </label>
+        <label class="flex items-center space-x-3">
+          <input type="radio" name="attendance" value="virtual" required
+            class="text-pink-500 focus:ring-pink-500" />
+          <span>Virtually (Online)</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Submit Button --> <!--Look into the register button with form submit-->
+    <div class="text-center">
+      <button type="submit"
+        class="bg-pink-500 text-white px-6 py-3 rounded hover:bg-pink-600 transition duration-300">
+        Register
+      </button>
+    </div>
+  </form>
+</section>
+
+
+  </main>
+
+  <footer class="text-center py-6 text-sm text-gray-500">
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <svg class="h-6 w-6 fill-current text-pink-500 hover:text-pink-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-2.9h2v-2.2c0-2 1.2-3.2 3-3.2.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.3v1.7h2.5l-.4 2.9h-2.1v7A10 10 0 0 0 22 12z"/>
+        </svg>
+      </a>
+      <a href="https://www.x.com" target="_blank" aria-label="Twitter">
+        <svg class="h-6 w-6 fill-current text-pink-500 hover:text-pink-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9.09 9.09 0 0 1-2.88 1.1 4.52 4.52 0 0 0-7.69 4.13 12.84 12.84 0 0 1-9.32-4.72 4.52 4.52 0 0 0 1.4 6A4.52 4.52 0 0 1 .96 6v.06a4.52 4.52 0 0 0 3.6 4.43 4.52 4.52 0 0 1-2 .07 4.52 4.52 0 0 0 4.2 3.13 9.05 9.05 0 0 1-5.6 1.94A8.64 8.64 0 0 1 0 19.54a12.79 12.79 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.4-.01-.6A9.22 9.22 0 0 0 23 3z"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <svg class="h-6 w-6 fill-current text-pink-500 hover:text-pink-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.5a4.9 4.9 0 0 1 1.8 1.2c.5.5.9 1.1 1.2 1.8.2.5.4 1.3.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.5a4.9 4.9 0 0 1-1.2 1.8c-.5.5-1.1.9-1.8 1.2-.5.2-1.3.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.5-.5a4.9 4.9 0 0 1-1.8-1.2 4.9 4.9 0 0 1-1.2-1.8c-.2-.5-.4-1.3-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.5a4.9 4.9 0 0 1 1.2-1.8 4.9 4.9 0 0 1 1.8-1.2c.5-.2 1.3-.4 2.5-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.3-2.1.5-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.4 1-.5 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.3 1.7.5 2.1.2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.2 1 .4 2.1.5 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.3 2.1-.5.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.4-1 .5-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.3-1.7-.5-2.1a2.9 2.9 0 0 0-.8-1.2 2.9 2.9 0 0 0-1.2-.8c-.4-.2-1-.4-2.1-.5-1.2-.1-1.6-.1-4.7-.1zm0 3.6a5.2 5.2 0 1 1 0 10.4 5.2 5.2 0 0 1 0-10.4zm0 8.6a3.4 3.4 0 1 0 0-6.8 3.4 3.4 0 0 0 0 6.8zm5.5-9.5a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>
+        </svg>
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <svg class="h-6 w-6 fill-current text-pink-500 hover:text-pink-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.28h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z"/>
+        </svg>
+      </a>
+    </div>
+    <div>
+      &copy; 2025 Tausi Initiative. All rights reserved.<br>
+      Website by <a href="http://tcmedia.mystrikingly.com" class="text-pink-500 hover:underline">TCMedia</a>.
+    </div>
+  </footer>
+
+  <script>
+    const donateBtn = document.getElementById('donateBtn');
+    const donationModal = document.getElementById('donationModal');
+    const cancelBtn = document.getElementById('cancelBtn');
+
+    donateBtn.addEventListener('click', () => donationModal.classList.remove('hidden'));
+    cancelBtn.addEventListener('click', () => donationModal.classList.add('hidden'));
+  </script>
+</body>
+</html>
