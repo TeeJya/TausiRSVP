@@ -32,6 +32,24 @@
       </div>
     </div>
   </div>
+  
+  <script>
+    // JavaScript to handle modal open/close
+    const donateBtn = document.getElementById('donateBtn');
+    const donationModal = document.getElementById('donationModal');
+    const cancelBtn = document.getElementById('cancelBtn');
+  
+    donateBtn.addEventListener('click', () => {
+      donationModal.classList.remove('hidden');
+    });
+  
+    cancelBtn.addEventListener('click', () => {
+      donationModal.classList.add('hidden');
+    });
+  </script>
+  </body>
+  </html>
+  
 <!-- i should work on the donate button and have a way to connect to stk
   <!-- Main Section -->
   <main class="px-6 py-10">
